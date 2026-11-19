@@ -110,7 +110,14 @@
             BalAtloOsszeg(negyzetesMatrix);
             JobbAtloOsszeg(negyzetesMatrix);
 
+            Console.WriteLine();
             int[,] masolat = negyzetesMatrix;
+            masolat[0, 0] = 100;
+            Console.WriteLine("A másolat elemei: ");
+            F02(masolat);
+            Console.WriteLine();
+            Console.WriteLine("A négyzetesmátrix: ");
+            F02(negyzetesMatrix);
         }
     }
 }
