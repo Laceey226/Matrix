@@ -27,12 +27,38 @@
                 Console.WriteLine();
             }
         }
+        static void F03()
+        {
+            Console.WriteLine();
+            int ossz = 0;
+            for (int i = 0;i < sorokSzama; i++)
+            {
+                for (int j = 0;j < oszlopokSzama; j++)
+                {
+                    ossz += szamokMatrix[i, j];
+                }
+            }
+            Console.WriteLine($"A mátrixban lévő elemek összege: {ossz}");
+        }
+        static void F04()
+        {
+            Console.WriteLine();
+            for (int i = 0; i < sorokSzama; i++)
+            {
+                int ossz = 0;
+                for ( int j = 0; j < oszlopokSzama; j++)
+                {
+                    ossz += szamokMatrix[i, j];
+                }
+                Console.WriteLine($"{i + 1}. sor összege: {ossz}");
+            }
+        }
         static void Main(string[] args)
         {
             F01();
             F02();
-
-
+            F03();
+            F04();
         }
     }
 }
